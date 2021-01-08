@@ -1,7 +1,7 @@
 # End-to-End-IP-transmission
 layer 3
 
-Routing betweento networks
+Routing between two networks
 
 What happens when a host(PC1) in one network wants to send ip packet to a host(PC2) in another network
 
@@ -43,4 +43,4 @@ STEP-18: Switch2 sends ethenet frame to Fa0/5
 
 STEP-19: PC2 receives frame & on the data link layer verifies FCS,compares destination MAC address to its own, finds they are equal, removes ethernet header 
 
-STEP-20:On the network layr PC2 checks header checksum & TTL, compares destination IP to its own IP. They are equal, strips IPv4 header & sends segment to the transport layer for further processing
+STEP-20: On the network layr PC2 checks header checksum & TTL, compares destination IP to its own IP. They are equal, strips IPv4 header & sends segment to the transport layer for further processing
