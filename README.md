@@ -37,10 +37,12 @@ STEP-15: Router sends ethernet frame via Gi0/1 interface(according to the route 
 
 STEP-16: Switch2 rceives ethernet frame from router on Gi1/2 interface, verifies FCS, checks MAC address table to find where destination MAC is located & finds it behind Fa0/5
 
-STEP-17: Switch-2 adds MAC addrss of router's Gi0/1 interface to the MAC address of router's Gi0/1 interface to the MAC address table & maps it to Gi1/2(if MAC of router not yet in table)
+STEP-17: Switch2 adds MAC addrss of router's Gi0/1 interface to the MAC address of router's Gi0/1 interface to the MAC address table & maps it to Gi1/2(if MAC of router not yet in table)
 
 STEP-18: Switch2 sends ethenet frame to Fa0/5
 
 STEP-19: PC2 receives frame & on the data link layer verifies FCS,compares destination MAC address to its own, finds they are equal, removes ethernet header 
 
 STEP-20: On the network layr PC2 checks header checksum & TTL, compares destination IP to its own IP. They are equal, strips IPv4 header & sends segment to the transport layer for further processing
+
+Reference: https://www.udemy.com/course/world-of-computer-networking/learn/lecture/23952890#overview
